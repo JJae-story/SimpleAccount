@@ -1,0 +1,32 @@
+### use balance test
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "8894248754",
+  "amount": 100
+}
+
+### use balance test2
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "8894248754",
+  "amount": 100
+}
+
+### cancel balance test
+POST http://localhost:8080/transaction/cancel
+Content-Type: application/json
+
+{
+  "transactionId": "b7f431f2120840899c228d3da4f8e13b",
+  "accountNumber": "0279978221",
+  "amount": 50000
+}
+
+### query transaction test
+GET http://localhost:8080/transaction/3f0b4bc7036442288d52a1649c4a3ec2
